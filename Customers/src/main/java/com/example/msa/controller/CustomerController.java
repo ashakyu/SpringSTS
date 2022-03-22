@@ -11,7 +11,7 @@ public class CustomerController {
 	@GetMapping("/{customerId}")
 	public String getCustomerDetail(@PathVariable String customerId) {
 		System.out.println("request customerId : " + customerId);
-		
+		//throw new RuntimeException("I/O Exception!");
 		return "[Customer ID = " + customerId + " at " + System.currentTimeMillis() + "]";
 	}
 }
