@@ -1,0 +1,15 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672 #rabbitmq 서비스 포트
+    username: guest
+    password: guest
+    
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        #요청할 endpoint http://localhost:9265/actuator/bus-refresh (POST) 끝 점을 만들어 준다.
+   
